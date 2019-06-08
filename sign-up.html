@@ -1,13 +1,108 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign-up</title>
-</head>
-<body>
-   <!--We need a sign up form here--> 
-   <h1> sign up form goes here </h1>
-</body>
+
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sign-up</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <style>
+    
+        *{margin: 0; padding: 0;}
+        body{background: #ecf1f4; font-family: sans-serif;}
+        
+        .form-wrap{ width: 600px; background: #2d3f4a; padding: 40px 20px; box-sizing: border-box; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+        h1{text-align: center; color: #fff; font-weight: normal; margin-bottom: 20px;}
+        
+        input{width: 100%; background: none; border: 1px solid #fff; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color: #fff;}
+        
+        input[type="button"]{ background: #edf9ac; border: 0; cursor: pointer; color: #3e3d3d;}
+        input[type="button"]:hover{ background: #581115; transition: .6s;}
+        
+        ::placeholder{color: #fff;}
+
+        #boxes{
+            margin-top: 75vh;
+        }
+
+        #showcase{
+            width: 1024px;
+            background: url("https://www.cc.gatech.edu/sites/default/files/images/community/tutoring.jpg")
+        }
+        
+    </style>
+
+    <body>
+            <header>
+                    <div class="container">
+                        <div id="branding">
+                            <h1><span class="highlight">Coding</span> What's That Tutoring</h1>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="tutoring-jobs.html">Tutoring Jobs</a></li>
+                                <li><a href="home.html">Home</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+    
+        <div class="form-wrap">
+        
+            <form>
+            
+                <h1>Sign Up</h1>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <input type="button" value="Sign Up">
+            
+            </form>
+        
+        </div>
+
+        <section id="showcase">
+                <div class="container">
+                    
+                    
+                </div>
+            </section>
+
+        <section id="boxes">
+                <div class="container">
+                  <div class="box">
+                    <img src="images/html5.png">
+                    <h3>HTML5 Markup</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+                  </div>
+                  <div class="box">
+                    <img src="images/css3.png">
+                    <h3>CSS3 Styling</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+                  </div>
+                  <div class="box">
+                    <img src="images/js.png">
+                    <h3>JavaScript</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+                  </div>
+                </div>
+              </section>
+              
+            <footer>
+                <p>&copy 2019 UCR Coding Boot Camp / Team - Coding What's That</p>
+            </footer>
+    
+    
+    
+    </body>
+
+
+
 </html>
