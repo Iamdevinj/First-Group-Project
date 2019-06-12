@@ -1,0 +1,90 @@
+header {
+    background-color: grey;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color:#ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    bottom: 40px;
+}
+
+header nav {
+    float: right;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+header a:hover {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+body {
+    background:#581115; 
+    font-family: sans-serif;
+}
+
+.form-wrap { 
+    background: #2d3f4a; 
+    padding: 40px 20px; 
+    box-sizing: border-box; 
+}
+
+h1{
+    text-align: center; 
+    color: #fff; 
+    font-weight: normal; 
+    margin-bottom: 20px;}
+
+input{
+    width: 100%; 
+    background: none;
+    border: 1px solid #fff; 
+    border-radius: 3px; padding: 6px 15px; 
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+    font-size: 16px; 
+    color: #fff;}
+
+input[type="button"]:hover{ 
+    background: #581115; 
+    transition: .6s;}
+
+::placeholder{color: #fff;}
+
+#boxes{
+    margin-top: 75vh;
+}
+
+.white{
+    background-color:  #fefbd8
+}
