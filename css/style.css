@@ -149,7 +149,7 @@ header a:hover {
     margin-top: 15px;
 }
 
-#help input[type="search"] {
+#help input[type="text"] {
     padding: 4px;
     height: 38px;
     width: 250px;

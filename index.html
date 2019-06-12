@@ -24,19 +24,9 @@
 
 <body>
 
-        <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Get $10 off first tutoring session</p>
-  </div>
-
-</div>
+    </div>
     <header>
         <div class="container">
             <div id="branding">
@@ -61,8 +51,22 @@
         <div class="container">
             <h1>What do you need help with?</h1>
             <form>
-                <input type="search" placeholder="Subject">
-                <button type="submit" class="button1">search</button>
+
+
+                <!-- <input type="text" id="txtAutoComplete" list="languageList" /> -->
+                <!--search input textbox-->
+                <select id="languageList">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="SQL">SQL</option>
+                    <option value="PHP">PHP</option>
+                    <option value="jQuery">jQuery</option>
+                    <option value="Bootstrap">Bootstrap</option>
+                    <option value="Angular">Angular</option>
+                    <option value="XML">XML</option>
+                    </select>
+
             </form>
         </div>
     </section>
@@ -76,8 +80,7 @@
                     </div>
 
                     <h3>HTML5 Markup</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
-                        ultricies</p>
+                    <p>Latest version of Hyper Text Markup Language.</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -87,8 +90,7 @@
                     </div>
 
                     <h3>CSS3 Styling</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
-                        ultricies</p>
+                    <p>CSS3 the latest version that supports responsive design.</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -98,8 +100,8 @@
                     </div>
 
                     <h3>JavaScript</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
-                        ultricies</p>
+                    <p>JavaScript has curly-bracket syntax, dynamic typing, <br>prototype-based object-orientation, and
+                        first-class functions. </p>
                 </div>
             </div>
         </div>
@@ -113,7 +115,8 @@
     </footer>
     </div>
     </section>
-    <script src="javascript.js"></script>
+
+    <script src="./javascript.js"></script>
 </body>
 
 </html>
