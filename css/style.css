@@ -154,6 +154,10 @@ header a:hover {
     height: 38px;
     width: 250px;
 }
+#languageList{
+    width: 300px;
+    height: 150px;
+}
 
 #boxes{
     margin-top:20px;
