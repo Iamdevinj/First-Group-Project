@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,7 +29,6 @@
     ></script>
     <title>Sign-up</title>
   </head>
-
   <style>
     * {
       margin: 0;
@@ -40,7 +38,6 @@
       background: #ecf1f4;
       font-family: sans-serif;
     }
-
     .form-wrap {
       width: 600px;
       background: #2d3f4a;
@@ -57,7 +54,6 @@
       font-weight: normal;
       margin-bottom: 20px;
     }
-
     input {
       width: 100%;
       background: none;
@@ -69,59 +65,126 @@
       font-size: 16px;
       color: #fff;
     }
+    input[type="button"] {
+      background: #edf9ac;
+      border: 0;
+      cursor: pointer;
+      color: #3e3d3d;
+    }
+    input[type="button"]:hover {
+      background: #581115;
+      transition: 0.6s;
+    }
+    ::placeholder {
+      color: #fff;
+    }
+  
+    #showcase {
+      background-image: url("../First-Group-Project/images/tutoring.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
 
-
-        <div class="container">
-            <!-- Trigger/Open The Modal -->
-            <button id="myBtn">First Time Users, Click HERE</button>
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p><strong>Use Promo Code "TENOFF"</p></strong>
-                    <small><h3>Give this promo code to your tutor for $10 off your first session</h3></small>
-                </div>
-
-            </div>
+    .btn-p{
+        color: white;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Coding</span> What's That Tutoring</h1>
         </div>
-
+        <nav>
+          <ul>
+            <li><a href="form2.html">Tutoring Jobs</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="form-wrap">
+      <form>
+        <h1>Sign Up</h1>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Username" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Confirm Password" />
+        <input type="button" onclick="location.href= 'map.html'" value="Sign Up" />
+        <button class="btn btn-primary float-right" id="Thumbs-Up">Thumbs Up</button>
+        <button class="btn btn-primary float-right" id="Thumbs-Down">Thumbs Down</button>
+        <p class="btn-p"> Was This Helpful?</p>
+       
+        </form>
+        
+        <div class="container">
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn">First Time Users, Click HERE</button>
+          <div id="myModal" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p><strong>Use Promo Code "TENOFF"</p></strong>
+                  <small><h3>Give this promo code to your tutor for $10 off your first session</h3></small>
+              </div>
+          </div>
+      </div>
+  </div>
+      
     </div>
-
-
+    
+    <section id="showcase">
+      <div class="container"></div>
+    </section>
     <section id="help">
       <div class="container"></div>
     </section>
-
     <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="images/html5.png" />
-          <h3>HTML5 Markup</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
-            augue, viverra sit amet ultricies
-          </p>
-        </div>
-        <div class="box">
-          <img src="images/css3.png" />
-          <h3>CSS3 Styling</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
-            augue, viverra sit amet ultricies
-          </p>
-        </div>
-        <div class="box">
-          <img src="images/js.png" />
-          <h3>JavaScript</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
-            augue, viverra sit amet ultricies
-          </p>
-        </div>
+      <div class="row">
+          <div class="col-sm-4">
+              <div class="box">
+                  <div class="image-container">
+                      <img id="image1" src="images/html5.png">
+                  </div>
+                  <h3>HTML5 Markup</h3>
+                  <p>Latest version of Hyper Text Markup Language.</p>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="box">
+                  <div class="image-container">
+                      <img id="image2" src="images/css3.png">
+                  </div>
+                  <h3>CSS3 Styling</h3>
+                  <p>CSS3 the latest version that supports responsive design.</p>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="box">
+                  <div class="image-container">
+                      <img id="image3" src="images/js.png">
+                  </div>
+                  <h3>JavaScript</h3>
+                  <p>JavaScript has curly-bracket syntax, dynamic typing, <br>prototype-based object-orientation, and
+                    first-class functions.</p>
+              </div>
+          </div>
       </div>
-    </section>
-
-    <footer>
+  </section>
+  <footer>
       <p>&copy 2019 UCR Coding Boot Camp / Team - Coding What's That</p>
-    </footer>
-  </body>
+  </footer>
+  </div>
+  </section>
+<script src="./javascript.js"></script>
+
+            <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+            <script src="thumbsup.js"></script> 
+
+    </body>
+
+
+
 </html>
