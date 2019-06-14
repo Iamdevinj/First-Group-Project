@@ -39,14 +39,13 @@
       font-family: sans-serif;
     }
     .form-wrap {
-      width: 600px;
+      width: 800px;
       background: #2d3f4a;
       padding: 40px 20px;
       box-sizing: border-box;
-      position: fixed;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      /* transform: translate(-50%, -50%);  */
     }
     h1 {
       text-align: center;
@@ -89,6 +88,14 @@
     .btn-p{
         color: white;
     }
+    #formcontainer{
+        display: inline-flex;
+        justify-content: center;
+        
+    }
+    #modal-content{
+      text-decoration-color: #2d3f4a;
+    }
   </style>
   <body>
     <header>
@@ -98,47 +105,49 @@
         </div>
         <nav>
           <ul>
-            <li><a href="form2.html">Tutoring Jobs</a></li>
+            <li><a href="tutoring-jobs.html">Tutoring Jobs</a></li>
             <li><a href="index.html">Home</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="form-wrap">
-      <form>
-        <h1>Sign Up</h1>
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Username" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <input type="password" placeholder="Confirm Password" />
-        <input type="button" onclick="location.href= 'map.html'" value="Sign Up" />
-        <button class="btn btn-primary float-right" id="Thumbs-Up">Thumbs Up</button>
-        <button class="btn btn-primary float-right" id="Thumbs-Down">Thumbs Down</button>
-        <p class="btn-p"> Was This Helpful?</p>
-       
-        </form>
-        
-        <div class="container">
-          <!-- Trigger/Open The Modal -->
-          <button id="myBtn">First Time Users, Click HERE</button>
-          <div id="myModal" class="modal">
-              <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <p><strong>Use Promo Code "TENOFF"</p></strong>
-                  <small><h3>Give this promo code to your tutor for $10 off your first session</h3></small>
-              </div>
-          </div>
-      </div>
-  </div>
+
       
     </div>
     
     <section id="showcase">
-      <div class="container"></div>
+      <div class="container" id="formcontainer">
+        <div class="form-wrap">
+            <form>
+              <h1>Sign Up</h1>
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Username" />
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Confirm Password" />
+              <input type="button" onclick="location.href= 'map.html'" value="Sign Up" />
+          
+             
+              </form>
+              
+              <div class="container">
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">First Time Users, Click HERE</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p><strong>Use Promo Code "TENOFF"</p></strong>
+                        <small><h3>Give this promo code to your tutor for $10 off your first session</h3></small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="help">
       <div class="container"></div>
+      <button class="btn btn-primary float-right" id="Thumbs-Up">Thumbs Up</button>
+              <button class="btn btn-primary float-right" id="Thumbs-Down">Thumbs Down</button>
+              <p class="btn-p">SURVEY: Was This Helpful?</p>
     </section>
     <section id="boxes">
       <div class="row">
@@ -177,11 +186,11 @@
   </footer>
   </div>
   </section>
-<script src="./javascript.js"></script>
 
             <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
             <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
             <script src="thumbsup.js"></script> 
+            <script src="./javascript.js"></script>
 
     </body>
 

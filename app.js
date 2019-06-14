@@ -1,3 +1,4 @@
+
 var config = {
     apiKey: "AIzaSyDI8VHb65yVJyJ1Nj-dgTERmkyqrcKVloo",
     databaseURL: "https://fir-to-group-project.firebaseio.com/",
@@ -100,3 +101,4 @@ var empQ4 = childSnapshot.val().Q4;
   console.log(empQ3);
   console.log(empQ4);
 });
+
